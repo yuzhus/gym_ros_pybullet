@@ -1,0 +1,9 @@
+
+<launch>
+
+    <!-- Load the parameters for the algorithm -->
+    <rosparam command="load" file="$(find gym_ros_pybullet)/config/training_params.yaml" />
+
+    <!-- Launch the training system -->
+    <node pkg="gym_ros_pybullet" name="train_xarm_gym_sac" type="start_training_sac.py" output="screen"/> 
+</launch>

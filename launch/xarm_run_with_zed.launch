@@ -1,0 +1,14 @@
+
+<launch>
+
+    <!-- Load the parameters for the algorithm -->
+    <rosparam command="load" file="$(find gym_ros_pybullet)/config/running_xarm_zed.yaml" />
+
+    <!-- Launch the training system with zed updated information-->
+    <group ns="xarm">
+        <node pkg="gym_ros_pybullet" name="run_xarm_gym" type="run_xarm_with_zed.py" output="screen"/> 
+    </group>
+
+
+
+</launch>

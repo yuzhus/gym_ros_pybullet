@@ -1,0 +1,15 @@
+
+<launch>
+
+    <!-- Load the parameters for the algorithm -->
+    <rosparam command="load" file="$(find gym_ros_pybullet)/config/running_xarm_zed.yaml" />
+
+    <!-- Launch the ZED camera detection -->
+    <group ns="zed">
+        <node pkg="gym_ros_pybullet" name="zed_detection" type="run_zed_detection.py" output="screen"/> 
+    </group>
+
+
+
+
+</launch>

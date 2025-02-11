@@ -1,0 +1,6 @@
+# The parameters for run_zed_detection.py node
+weights: "best_digitaltwin.pt"
+# if_svo: "None"
+img_size: 416
+conf_thres: 0.7
+running_steps: 100000
